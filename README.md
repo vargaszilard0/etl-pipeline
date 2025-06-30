@@ -1,8 +1,6 @@
-# ETL Pipeline Builder QGIS Plugin
+# etl-pipeline
 
 A dock-widget plugin for QGIS 3 that lets you assemble simple Extract-Transform-Load (ETL) workflows without leaving the GIS interface and run them either interactively or head-less via the Processing toolbox.
-
-![screenshot](docs/screenshot.png)
 
 ## Features
 
@@ -61,23 +59,6 @@ pb_tool compile                      # generate resources (if you change icons)
 ```
 
 To run the plugin from source while developing, use QGIS’s **Plugin Reloader** add-on or start QGIS with the `--code` flag pointing at `main.py`.
-
-### Project structure
-
-```
-etl-pipeline/
-├── __init__.py              # exposes classFactory()
-├── etl_pipeline_builder.py  # plugin entry-point class
-├── etl_builder_panel.py     # main dock widget & executor logic
-├── etl_builder_base.ui      # Qt Designer file for the dock
-├── processing_provider.py   # Processing provider wrapper
-├── metadata.txt             # QGIS plugin metadata
-└── README.md                # this file
-```
-
-## License
-
-MIT License – see `LICENSE` for details.
 
 ## Credits
 
