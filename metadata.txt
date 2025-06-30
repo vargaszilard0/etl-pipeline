@@ -1,0 +1,13 @@
+[general]
+name=ETLPipelineBuilderTool
+qgisMinimumVersion=3.0
+description=Visual drag-and-drop ETL workflow builder for geospatial data.
+version=0.1
+author=Cascade
+email=example@example.com
+about=Create reusable ETL pipelines that extract, transform and load geospatial datasets between files and cloud warehouses.
+tags=etl,data engineering,workflow
+category=Plugins
+icon=
+experimental=True
+server=False

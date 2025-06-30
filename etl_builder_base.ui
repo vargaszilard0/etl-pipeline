@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ETLBuilderDockBase</class>
+ <widget class="QDockWidget" name="ETLBuilderDockBase">
+  <property name="windowTitle">
+   <string>ETL Pipeline Builder</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QToolBar" name="toolBar">
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <addaction name="actionOpen"/>
+      <addaction name="actionSave"/>
+      <addaction name="actionAddSource"/>
+      <addaction name="actionAddFilter"/>
+      <addaction name="actionAddSink"/>
+      <addaction name="actionRun"/>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="centralWidget">
+      <layout class="QHBoxLayout" name="hLayout">
+       <item>
+        <widget class="QListWidget" name="listSteps">
+         <property name="minimumWidth">
+          <number>150</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackParams">
+         <property name="minimumWidth">
+          <number>350</number>
+         </property>
+         <widget class="QWidget" name="pageBlank"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="text">
+       <string>Canvas</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets/>
+ <resources/>
+ <connections/>
+ <action name="actionOpen">
+  <property name="iconText">
+   <string>Open</string>
+  </property>
+  <property name="text">
+   <string>Open</string>
+  </property>
+ </action>
+ <action name="actionSave">
+  <property name="text">
+   <string>Save</string>
+  </property>
+ </action>
+ <action name="actionAddSource">
+  <property name="text">
+   <string>Add Source</string>
+  </property>
+ </action>
+ <action name="actionAddParquetSource">
+  <property name="text">
+   <string>Add Parquet Source</string>
+  </property>
+ </action>
+ <action name="actionAddPostgisSource">
+  <property name="text">
+   <string>Add PostGIS Source</string>
+  </property>
+ </action>
+ <action name="actionAddFilter">
+  <property name="text">
+   <string>Add Transform</string>
+  </property>
+ </action>
+ <action name="actionAddCloudSource">
+  <property name="text"><string>Add Cloud Source</string></property>
+ </action>
+ <action name="actionAddCloudSink">
+  <property name="text"><string>Add Cloud Sink</string></property>
+ </action>
+ <action name="actionAddParquetSink">
+  <property name="text"><string>Add Parquet Sink</string></property>
+ </action>
+ <action name="actionAddPostgisSink">
+  <property name="text"><string>Add PostGIS Sink</string></property>
+ </action>
+ <action name="actionAddSink">
+  <property name="text">
+   <string>Add Sink</string>
+  </property>
+ </action>
+ <action name="actionRun">
+  <property name="text">
+   <string>Run</string>
+  </property>
+ </action>
+</ui>
